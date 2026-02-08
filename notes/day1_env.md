@@ -1,9 +1,8 @@
 # Day 1 - Environment & Build (cJSON v1.7.19)
 
 ## System
-- OS/WSL: 
-- Compiler: 
-- CMake: 
+- OS/WSL: 24.04
+- CMake: 3.28.3
 
 ## Steps
 1) Clone fork + add upstream
