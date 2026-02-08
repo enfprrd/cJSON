@@ -11,10 +11,10 @@
 4) 提交日志
 
 ## 关键理解
-1)每一个json的值对应一个cjson的节点,这个节点可以是新的键值对(object),可以是json数组(array),可以是字符串(string),也可以是数字(number),可以是布尔值(bool),也可以是空(null)
-2)同一层子元素通过next和prev形成双向链表
-3)object通过key(string)来定位,他的child指向第一个元素
-4)array通过下标来定位,他的child指向第一个成员
+1) 每一个json的值对应一个cjson的节点,这个节点可以是新的键值对(object),可以是json数组(array),可以是字符串(string),也可以是数字(number),可以是布尔值(bool),也可以是空(null)
+2) 同一层子元素通过next和prev形成双向链表
+3) object通过key(string)来定位,他的child指向第一个元素
+4) array通过下标来定位,他的child指向第一个成员
 ### 举例
 一个json:{a: [1,"a",3]},item->child->child->next对应的就是a.(item是root object)
 5)cjson字段:
